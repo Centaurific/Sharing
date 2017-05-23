@@ -1,0 +1,43 @@
+body {
+    font-family: Muli;
+    font-weight: 100;
+	color: #58585b;
+}
+
+.loading-bar {
+	height: 20px;
+}
+
+.loading-bar-light {
+	background-color: #b28173;
+	height: 20px;
+}
+
+.loading-bar-dark {
+	background-color: #79797c;
+	height: 20px;
+}
+
+.active {
+	opacity: 0.8;
+}
+
+.active:hover {
+	opacity: 1;
+	color: #58585b;
+	text-decoration: none;
+}
+
+.inactive {
+	opacity: 0.3;
+}
+
+.inactive:hover{
+	text-decoration: none;
+	color: #58585b;
+	opacity: 0.3;
+}
+
+.hide {
+	display: hidden;
+}

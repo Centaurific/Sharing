@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <title>Dreamless Sharing Page</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/3-col-portfolio.css" rel="stylesheet">
+  
+  <!-- CSS for sharepage -->
+  <link href="css/sharepage.css" rel="stylesheet">
+
+  <!-- Icon Fonts-->
+  <script src="https://use.fontawesome.com/3e76115930.js"></script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- Google Font -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Muli">
+
+  <!-- SumoMe -->
+  <script src="//load.sumome.com/" data-sumo-site-id="c890aab930bb41adb5a6a043cae334a1a711648ab159e699ba2a5d78bdad9018" async="async"></script>
+
+</head>
+
+<body>
+
+  <!-- Page Content -->
+  <div class="container">
+
+  <!-- Page Header -->
+  <div class="row">
+    <div id = "logodiv" class="col-md-6 col-md-offset-4 col-sm-8 
+    col-sm-offset-3 col-xs-10 col-xs-offset-1">
+      <a href="http://www.dreamless.io/" target="_blank">
+        <img class="img-responsive" src="img/dreamless.png" alt="Dreamless logo">
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 nav-list">
+      <hr>
+      <h3>Share your love for the Dreamless in 3 clicks</h3>
+      <hr>
+    </div>
+  </div>
+   
+  <!-- Note to Sharers -->
+  <div class="row">
+    <div class="col-lg-12">
+    <p><b>Hey there!</b><br></p>
+    <p>We hope you're having an awesome day. You're here because we know you have influence. When you share something, people pay attention. So, please take a few seconds to spread the Lightboard love.</p><br>
+    <p><b>Thanks so much,</b></p>
+    <p>The folks at Centaurific</p>
+    </div>
+  </div>
+  <!-- Loading Bar -->
+  <hr>
+  <div class="loading-bar">
+	  <div id="first-third" class="col-xs-4 loading-bar-dark"></div>
+	  <div id="second-third" class="col-xs-4 loading-bar-dark"></div>
+	  <div id="third-third" class="col-xs-4 loading-bar-dark"></div>
+	  <p id="0percent" class="text-center show">0%</p>
+	  <p id="33percent" class="text-center hide">33%</p>
+	  <p id="66percent" class="text-center hide">66%</p>
+	  <p id="100percent" class="text-center hide">100%</p>
+  </div>
+  <!-- Sharing Buttons -->
+	<div class="row">
+	  <div class="col-lg-12 text-center">
+		  <hr>
+		  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+			  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.kickstarter.com/projects/1715882363/lightboard-14t" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A//www.kickstarter.com/projects/1715882363/lightboard-14t', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=10,height=10'); return false;" class="sharing-button active" id="step1"><i class="fa fa-facebook-official fa-4x"></i><br>1. Share on<br>Facebook</a>
+		  </div>
+		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+			  <a href="https://twitter.com/home?status=Remember%20how%20the%20chalkboard%20was%20replaced%20by%20the%20whiteboard?%20The%20next%20replacement%20is%20here%3A%20Lightboard%20by%20Centaurific%20http%3A//goo.gl/V5VE5b" onclick="window.open('https://twitter.com/home?status=Remember%20how%20the%20chalkboard%20was%20replaced%20by%20the%20whiteboard?%20The%20next%20replacement%20is%20here%3A%20Lightboard%20by%20Centaurific%20http%3A//goo.gl/V5VE5b', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;" class="sharing-button inactive" id="step2"><i class = "fa fa-twitter fa-4x"></i><br>2. Tweet<br>about us</a>
+		  </div>
+		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+			  <a class="sharing-button inactive" id="step3"><i class = "fa fa-play fa-4x"></i><br>3. Watch our<br>Video</a>
+		  </div>
+		  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
+	  </div>
+	</div>
+
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+	$.fn.loadingBar = function() {
+		$(this).removeClass('loading-bar-dark').addClass('loading-bar-light');
+	}
+	$('#step2, #step3').removeAttr('href').removeAttr('onclick');
+	$('#step1').on('click', function() {
+		$('#step1').unbind('click').removeAttr('href').removeAttr('onclick').removeClass('active').addClass('inactive');
+		$('#0percent').removeClass('show').addClass('hide');
+		$('#33percent').removeClass('hide').addClass('show');
+		$('#first-third').loadingBar();
+		$('#step2').attr('onclick', "window.open('https://twitter.com/home?status=Remember%20how%20the%20chalkboard%20was%20replaced%20by%20the%20whiteboard?%20The%20next%20replacement%20is%20here%3A%20Lightboard%20by%20Centaurific%20http%3A//goo.gl/V5VE5b', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;").removeClass('inactive').addClass('active').on('click', function() {
+			$('#step2').unbind('click').removeAttr('href').removeAttr('onclick').removeClass('active').addClass('inactive');
+			$('#33percent').removeClass('show').addClass('hide');
+			$('#66percent').removeClass('hide').addClass('show');
+			$('#second-third').loadingBar();
+			$('#step3').attr('onclick', "window.open('https://www.kickstarter.com/projects/1715882363/lightboard-14t/description', '');").removeClass('inactive').addClass('active').on('click', function() {
+				$('#step3').unbind('click').removeAttr('onclick').removeClass('active').addClass('inactive');
+				$('#66percent').removeClass('show').addClass('hide');
+				$('#100percent').removeClass('hide').addClass('show');
+				$('#third-third').loadingBar();
+			})
+		})
+	})
+});
+</script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

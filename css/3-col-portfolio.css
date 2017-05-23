@@ -1,0 +1,149 @@
+/*!
+ * Start Bootstrap - 3 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+#logodiv {
+  text-align:center;
+  width:100%;
+}
+
+body {
+    padding-top: 45px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.top-buffer { 
+    margin-top:30px; 
+}
+
+.special {
+    text-align: center;
+    font-family: Muli;
+    font-weight: 100;
+    font-size: large;
+}
+
+.special2 {
+    text-align: center;
+    font-family: Muli;
+    font-weight: 100;
+    font-size: 15pt;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+footer .row {
+    text-align: center;
+}
+
+
+/* Form stuff */
+form .form-control {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none!important; 
+    resize: none;
+}
+
+
+form hr {
+    border-color: #fff;
+    /*border-color: #FCFBE3;*/
+    border-radius: 2px;
+}
+
+form .btn {
+    color:#fff;
+    background-color:#778899;
+    border-color:#fff;
+    border-radius: 15px;
+    border:10px;
+}
+
+
+form .btn:hover,
+form .btn:link {
+    color:#fff;
+    background-color:#6b7a89;
+    border-color: #636363;
+    background-image: none;
+}
+
+form .btn:visited,
+form .btn:focus, 
+form .btn:active, 
+form .btn:focus:active {
+    color:#fff;
+    background-color:#6b7a89;
+    border-color: #636363;
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+/* End Form stuff */
+.social-list > li {
+    margin-right: 0px !important;
+}
+
+.title {
+    text-align: center;
+    font-family: Muli;
+    font-weight: 100;
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: #58585b;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    margin-bottom: 0px;
+}
+
+.nav-list {
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Muli;
+    color: #636363;
+    margin-bottom: 10px;
+
+}
+
+a:focus,
+a:active,
+a:visited,
+a:link,
+a {
+    color: #58585b;
+    text-decoration: none;
+}
+
+a {
+    color: #58585b;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.list-inline > li {
+    margin-right: 17px;
+    margin-left: 14px;
+}
+
+.is-hidden {
+    display:none;
+}
+/*
+(min-width : 480px) {
+    new stuff here
+}
+*/
