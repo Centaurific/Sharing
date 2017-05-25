@@ -82,13 +82,13 @@
 		  <hr>
 		  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
 		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-			  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.kickstarter.com/projects/1977274087/cardrack" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.kickstarter.com/projects/1977274087/cardrack', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=10,height=10'); return false;" class="sharing-button active" id="step1"><i class="fa fa-facebook-official fa-4x"></i><br>1. Share on<br>Facebook</a>
+			  <a href="https://www.facebook.com/sharer/sharer.php?u=https://igg.me/at/dreamless/x/16712127" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://igg.me/at/dreamless/x/16712127', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=10,height=10'); return false;" class="sharing-button active" id="step1"><i class="fa fa-facebook-official fa-4x"></i><br>1. Share on<br>Facebook</a>
 		  </div>
 		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-			  <a href="https://twitter.com/home?status=This%20will%20tweet%20a%20thing%20https://www.kickstarter.com/projects/1977274087/cardrack" onclick="window.open('https://twitter.com/home?status=This%20will%20tweet%20a%20thing%20https://www.kickstarter.com/projects/1977274087/cardrack', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;" class="sharing-button inactive" id="step2"><i class = "fa fa-twitter fa-4x"></i><br>2. Tweet<br>about us</a>
+			  <a href="https://twitter.com/home?status=Dreamless,%20a%20pillow%20subscription%20service,%20is%20live%20on%20Indiegogo!%20https://igg.me/at/dreamless/x/16712127" onclick="window.open('https://twitter.com/home?status=Dreamless,%20a%20pillow%20subscription%20service,%20is%20live%20on%20Indiegogo!%20https://igg.me/at/dreamless/x/16712127', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;" class="sharing-button inactive" id="step2"><i class = "fa fa-twitter fa-4x"></i><br>2. Tweet<br>about us</a>
 		  </div>
 		  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-			  <a href="http://www.dreamless.io" class="sharing-button inactive" id="step3"><i class = "fa fa-play fa-4x"></i><br>3. Watch our<br>Video</a>
+			  <a href="https://igg.me/at/dreamless/x/16712127" class="sharing-button inactive" id="step3"><i class = "fa fa-play fa-4x"></i><br>3. Watch our<br>Video</a>
 		  </div>
 		  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
 	  </div>
@@ -109,12 +109,12 @@ $(function() {
 		$('#0percent').removeClass('show').addClass('hide');
 		$('#33percent').removeClass('hide').addClass('show');
 		$('#first-third').loadingBar();
-		$('#step2').attr('onclick', "window.open('https://twitter.com/home?status=This%20will%20tweet%20a%20thing%20https://www.kickstarter.com/projects/1977274087/cardrack', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;").removeClass('inactive').addClass('active').on('click', function() {
+		$('#step2').attr('onclick', "window.open('https://twitter.com/home?status=Dreamless,%20a%20pillow%20subscription%20service,%20is%20live%20on%20Indiegogo!%20https://igg.me/at/dreamless/x/16712127', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;").removeClass('inactive').addClass('active').on('click', function() {
 			$('#step2').unbind('click').removeAttr('href').removeAttr('onclick').removeClass('active').addClass('inactive');
 			$('#33percent').removeClass('show').addClass('hide');
 			$('#66percent').removeClass('hide').addClass('show');
 			$('#second-third').loadingBar();
-			$('#step3').attr('onclick', "window.open('http://www.dreamless.io', '');").removeClass('inactive').addClass('active').on('click', function() {
+			$('#step3').attr('onclick', "window.open('https://igg.me/at/dreamless/x/16712127', '');").removeClass('inactive').addClass('active').on('click', function() {
 				$('#step3').unbind('click').removeAttr('onclick').removeClass('active').addClass('inactive');
 				$('#66percent').removeClass('show').addClass('hide');
 				$('#100percent').removeClass('hide').addClass('show');
