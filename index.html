@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
 
-  <title>Dreamless Sharing Page</title>
+  <title>Campaign Sharing Page</title>
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,9 +29,6 @@
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Muli">
 
-  <!-- SumoMe -->
-  <script src="//load.sumome.com/" data-sumo-site-id="c890aab930bb41adb5a6a043cae334a1a711648ab159e699ba2a5d78bdad9018" async="async"></script>
-
 </head>
 
 <body>
@@ -43,15 +40,15 @@
   <div class="row">
     <div id = "logodiv" class="col-md-6 col-md-offset-4 col-sm-8 
     col-sm-offset-3 col-xs-10 col-xs-offset-1">
-      <a href="http://www.dreamless.io/" target="_blank">
-        <img class="img-responsive" src="img/dreamless.png" alt="Dreamless logo">
-      </a>
+      <!--<a href="#" target="_blank"> -->
+        <img class="img-responsive" src="img/logo_placeholder.png" alt="logo">
+      <!-- </a> -->
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12 nav-list">
       <hr>
-      <h3>Share your love for Dreamless in 3 clicks</h3>
+      <h3>Share your love for _____ in 3 clicks</h3>
       <hr>
     </div>
   </div>
@@ -60,9 +57,9 @@
   <div class="row">
     <div class="col-lg-12">
     <p><b>Hey there!</b><br></p>
-    <p>We hope you're having an awesome day. You're here because we know you have influence. When you share something, people pay attention. So, please take a few seconds to spread the Dreamless love.  First, you can see why someone might want a new pillow every 6 months by watching our video.  Then, if you're willing, you can share Dreamless on Facebook and Twitter.</p><br>
+    <p>We hope you're having an awesome day. You're here because we know you have influence. When you share something, people pay attention. So, please take a few seconds to spread the _____ love.  First, you can watch our video.  Then, if you're willing, you can share _____ on Facebook and Twitter.</p><br>
     <p><b>Thanks so much,</b></p>
-    <p>Dreamless</p>
+    <p>________</p>
     </div>
   </div>
   <!-- Loading Bar -->
@@ -83,15 +80,15 @@
 		  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
 		  
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-        <a href="https://igg.me/at/dreamless/x/16712127" onclick="window.open('https://igg.me/at/dreamless/x/16712127'); return false;" class="sharing-button active" id="step1"><i class = "fa fa-play fa-4x"></i><br>1. Watch our<br>Video</a>
+        <a onclick="window.open('http://jjasonbell.xyz/'); return false;" class="sharing-button active" id="step1"><i class = "fa fa-play fa-4x"></i><br>1. Watch our<br>Video</a>
       </div>
 
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://igg.me/at/dreamless/x/16712127" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://igg.me/at/dreamless/x/16712127', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=10,height=10'); return false;" class="sharing-button inactive" id="step2"><i class="fa fa-facebook-official fa-4x"></i><br>2. Share on<br>Facebook</a>
+        <a class="sharing-button inactive" id="step2"><i class="fa fa-facebook-official fa-4x"></i><br>2. Share on<br>Facebook</a>
       </div>
 
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
-        <a href="https://twitter.com/home?status=Dreamless,%20a%20pillow%20subscription%20service,%20is%20live%20on%20Indiegogo!%20https://igg.me/at/dreamless/x/16712127" class="sharing-button inactive" id="step3"><i class = "fa fa-twitter fa-4x"></i><br>3. Tweet<br>about us</a>
+        <a class="sharing-button inactive" id="step3"><i class = "fa fa-twitter fa-4x"></i><br>3. Tweet<br>about us</a>
       </div>
 
 		  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-0"></div>
@@ -113,12 +110,12 @@ $(function() {
 		$('#0percent').removeClass('show').addClass('hide');
 		$('#33percent').removeClass('hide').addClass('show');
 		$('#first-third').loadingBar();
-		$('#step2').attr('onclick', "window.open('https://www.facebook.com/sharer/sharer.php?u=https://igg.me/at/dreamless/x/16712127', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;").removeClass('inactive').addClass('active').on('click', function() {
+		$('#step2').attr('onclick', "window.open('https://www.facebook.com/sharer/sharer.php?u=http://jjasonbell.xyz/', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,width=582,height=475'); return false;").removeClass('inactive').addClass('active').on('click', function() {
 			$('#step2').unbind('click').removeAttr('href').removeAttr('onclick').removeClass('active').addClass('inactive');
 			$('#33percent').removeClass('show').addClass('hide');
 			$('#66percent').removeClass('hide').addClass('show');
 			$('#second-third').loadingBar();
-			$('#step3').attr('onclick', "window.open('https://twitter.com/home?status=Dreamless,%20a%20pillow%20subscription%20service,%20is%20live%20on%20Indiegogo!%20https://igg.me/at/dreamless/x/16712127', '');").removeClass('inactive').addClass('active').on('click', function() {
+			$('#step3').attr('onclick', "window.open('https://twitter.com/home?status=Jason%20Bell%20is%20amazing%20http://jjasonbell.xyz/', '');").removeClass('inactive').addClass('active').on('click', function() {
 				$('#step3').unbind('click').removeAttr('onclick').removeClass('active').addClass('inactive');
 				$('#66percent').removeClass('show').addClass('hide');
 				$('#100percent').removeClass('hide').addClass('show');
